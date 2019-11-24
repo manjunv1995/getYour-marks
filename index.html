@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>yourmarks</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <form class="text-center border border-5px p-5" action="#!">
+            <p class="h4 mb-4">Your Result</p>
+
+            <div class="form-row mb-4">
+                <div class="col d-flex">
+                    <h3 class="subject-name">Telugu</h3> ::
+                    <input type="number" id="teluguMarks" class="form-control text-right">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col d-flex">
+                    <h3 class="subject-name">English</h3> ::
+                    <input type="number" id="englishMarks" class="form-control text-right">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col d-flex">
+                    <h3 class="subject-name">Maths</h3> ::
+                    <input type="number" id="mathsMarks" class="form-control text-right">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col d-flex">
+                    <h3 class="subject-name">Science</h3> ::
+                    <input type="number" id="scienceMarks" class="form-control text-right">
+                </div>
+            </div>
+            <div class="form-row mb-4">
+                <div class="col d-flex">
+                    <h3 class="subject-name">Social</h3> ::
+                    <input type="number" class="form-control text-right" id="socialMarks">
+                </div>
+            </div>
+
+            <button class=" btn btn-info my-4 btn-block" type="submit" onclick="getValue()">Total</button>
+
+            <div class="">
+                <p class="final" id="urMarks">your marks is :</p>
+                <p class="final" id="urPercentage">your percentage is :</p>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
